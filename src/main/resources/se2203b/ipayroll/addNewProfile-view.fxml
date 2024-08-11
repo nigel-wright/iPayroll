@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="595.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.ipayroll.AddNewProfileController">
+   <children>
+      <TabPane layoutX="73.0" layoutY="149.0" prefHeight="345.0" prefWidth="748.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Personal Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;">
+                     <children>
+                        <Label layoutX="42.0" layoutY="40.0" text="Province" />
+                        <Label layoutX="67.0" layoutY="80.0" text="City" />
+                        <Label layoutX="56.0" layoutY="120.0" text="Phone" />
+                        <Label layoutX="29.0" layoutY="160.0" text="Postal Code" />
+                        <Label layoutX="17.0" layoutY="200.0" text="Martial Status" />
+                        <Label layoutX="36.0" layoutY="240.0" text="Skill Code" />
+                        <Label layoutX="454.0" layoutY="42.0" text="SIN" />
+                        <Label layoutX="418.0" layoutY="81.0" text="Job Name" />
+                        <Label layoutX="407.0" layoutY="161.0" text="Date of Birth" />
+                        <Label layoutX="410.0" layoutY="201.0" text="Date of Hire" />
+                        <Label layoutX="348.0" layoutY="240.0" text="Date Of Last Promotion" />
+                        <TextField fx:id="province" layoutX="100.0" layoutY="37.0" />
+                        <TextField fx:id="city" layoutX="100.0" layoutY="77.0" />
+                        <TextField fx:id="phone" layoutX="100.0" layoutY="117.0" />
+                        <TextField fx:id="postalCode" layoutX="100.0" layoutY="157.0" />
+                        <TextField fx:id="martialStatus" layoutX="100.0" layoutY="197.0" />
+                        <TextField fx:id="skillCode" layoutX="100.0" layoutY="237.0" />
+                        <TextField fx:id="sin" layoutX="486.0" layoutY="37.0" />
+                        <TextField fx:id="jobName" layoutX="486.0" layoutY="77.0" />
+                        <DatePicker fx:id="dateOfBirth" layoutX="486.0" layoutY="157.0" />
+                        <DatePicker fx:id="dateOfHire" layoutX="486.0" layoutY="197.0" prefHeight="26.0" prefWidth="186.0" />
+                        <DatePicker fx:id="dateOfLastPromotion" layoutX="486.0" layoutY="237.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Earnings Data">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;">
+                     <children>
+                        <Label layoutX="220.0" layoutY="140.0" text="To be completed in assignment 4" textFill="RED">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Deductions Data">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;">
+                     <children>
+                        <Label layoutX="220.0" layoutY="140.0" text="To be completed in assignment 4" textFill="RED">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="309.0" layoutY="44.0" text="Add New Employee Profile">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="103.0" text="Employee ID" />
+      <TextField fx:id="employeeID" layoutX="187.0" layoutY="99.0" prefHeight="26.0" prefWidth="92.0" />
+      <TextField fx:id="employeeName" layoutX="447.0" layoutY="97.0" prefHeight="26.0" prefWidth="227.0" />
+      <Label layoutX="340.0" layoutY="102.0" text="Employee Name" />
+      <Button fx:id="cancelBtn" layoutX="630.0" layoutY="520.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="60.0" text="Cancel" />
+      <Button fx:id="saveBtn" layoutX="740.0" layoutY="520.0" mnemonicParsing="false" onAction="#save" prefHeight="30.0" prefWidth="60.0" text="Save" />
+   </children>
+</AnchorPane>
